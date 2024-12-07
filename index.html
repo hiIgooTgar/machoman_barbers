@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machoman Barbers</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- link font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="navbar" class="bg-slate-900/10 fixed w-full left-0 top-0 z-50">
+      <nav class="container flex items-center justify-between h-16 sm:h-20">
+        <div class="text-xl sm:text-2xl text-bold">
+          <span class="text-primary">Machoman</span>Barbers
+        </div>
+        <div
+          id="nav-menu"
+          class="absolute z-50 top-0 left-[-100%] w-full min-h-[80vh] bg-slate-900/20 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col gap-8 items-center lg:flex-row">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#popular" class="nav-link">Popular</a></li>
+            <li><a href="#review" class="nav-link">Review</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="text-lg sm:2xl cursor-pointer z-50 lg:hidden">
+          <i class="fa-solid fa-bars-staggered" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="container">
+          <div class="flex flex-col items-center gap-5 lg:flex-row">
+            <div class="w-full space-y-5 lg:w-1/2">
+              <h1 class="title-hero">
+                Precision <span class="text-primary">Cuts</span> for Modern
+                <span class="text-primary">Gentlemen.</span>
+              </h1>
+              <p>
+                Machoman Barbers: Tempat pria sejati tampil sempurna. Dengan
+                sentuhan ahli dan gaya modern, kami hadirkan potongan terbaik
+                yang mencerminkan kepribadian macho Anda. Stay sharp, stay
+                confident!
+              </p>
+              <div class="flex flex-col gap-3 sm:flex-row md:gap-4 lg:gap-5">
+                <button class="btn">
+                  <span>Order Now</span>
+                  <i class="fa-solid fa-street-view"></i>
+                </button>
+                <button class="btn btn-outline">
+                  <span>Know More</span>
+                  <i class="fa-solid fa-circle-check"></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="w-full relative flex items-center justify-center lg:w-1/2"
+            >
+              <img src="assets/images/hero-img.png" alt="" />
+
+              <div
+                class="absolute text-xl -top-1 right-0 opacity-45 animate-movingY lg:top-8"
+              >
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div
+                class="absolute text-xl top-1 left-0 opacity-45 animate-movingY lg:bottom-6"
+              >
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+              </div>
+              <div
+                class="absolute text-xl -bottom-8 right-0 opacity-45 animate-movingY lg:bottom-5"
+              >
+                <i class="fas fa-ruler-combined"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
