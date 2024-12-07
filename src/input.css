@@ -14,7 +14,11 @@ body {
 }
 
 section {
-  @apply py-24;
+  @apply py-36;
+}
+
+.home {
+  @apply h-[100dvh] flex items-center justify-center;
 }
 
 .title-hero {

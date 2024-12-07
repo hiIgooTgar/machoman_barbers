@@ -5,7 +5,6 @@ const navLink = document.querySelectorAll(".nav-link");
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("left-[0]");
   hamburger.classList.toggle("fa-x");
-  console.log(navMenu);
 });
 
 navLink.forEach((link) => {
