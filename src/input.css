@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  @apply py-36;
+  @apply py-24;
 }
 
 .home {
@@ -26,11 +26,15 @@ section {
 }
 
 .nav-link {
-  @apply font-bold  duration-300;
+  @apply font-medium duration-300;
 }
 
 .nav-link:hover {
   @apply text-primary;
+}
+
+.active-menu {
+  @apply text-primary font-semibold;
 }
 
 /* button */
@@ -49,3 +53,22 @@ section {
 .btn-outline:hover {
   @apply bg-primary text-gray-950;
 }
+
+/* kontak header start */
+.kontak-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/kontak.webp");
+  @apply w-full h-64 flex items-center justify-start bg-no-repeat bg-cover;
+}
+/* kontak-header end */
+
+/* footer start */
+footer h4 {
+  position: relative;
+}
+
+footer h4::after {
+  content: "";
+  @apply w-10 h-2 bg-primary absolute right-0 -bottom-1 inline-block;
+}
+/* footer end */

@@ -13,3 +13,10 @@ navLink.forEach((link) => {
     hamburger.classList.toggle("fa-x");
   });
 });
+
+// active menus
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.href === window.location.href) {
+    link.classList.add("active-menu");
+  }
+});

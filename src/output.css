@@ -652,8 +652,20 @@ video {
   z-index: 50;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .h-16{
@@ -664,12 +676,24 @@ video {
   height: 16rem;
 }
 
+.h-72{
+  height: 18rem;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
 .min-h-\[100vh\]{
   min-height: 100vh;
 }
 
 .w-64{
   width: 16rem;
+}
+
+.w-9{
+  width: 2.25rem;
 }
 
 .w-full{
@@ -742,6 +766,14 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -758,8 +790,16 @@ video {
   justify-content: space-between;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -784,6 +824,20 @@ video {
   border-radius: 9999px;
 }
 
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+}
+
+.bg-grayColors{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
@@ -797,6 +851,29 @@ video {
   background-color: rgb(15 23 42 / 0.4);
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pb-1{
+  padding-bottom: 0.25rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -805,6 +882,19 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-primary{
@@ -858,8 +948,8 @@ body{
 }
 
 section{
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .home{
@@ -890,11 +980,17 @@ section{
 }
 
 .nav-link{
-  font-weight: 700;
+  font-weight: 500;
   transition-duration: 300ms;
 }
 
 .nav-link:hover{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.active-menu{
+  font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
@@ -932,6 +1028,65 @@ section{
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(3 7 18 / var(--tw-text-opacity, 1));
+}
+
+/* kontak header start */
+
+.kontak-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/kontak.webp");
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* kontak-header end */
+
+/* footer start */
+
+footer h4 {
+  position: relative;
+}
+
+footer h4::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: -0.25rem;
+  display: inline-block;
+  height: 0.5rem;
+  width: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+}
+
+/* footer end */
+
+.hover\:border-2:hover{
+  border-width: 2px;
+}
+
+.hover\:border-primary:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity, 1));
+}
+
+.hover\:bg-transparent:hover{
+  background-color: transparent;
+}
+
+.hover\:text-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-slate-300:hover{
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 340px){
@@ -976,6 +1131,16 @@ section{
 @media (min-width: 540px){
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1023,5 +1188,17 @@ section{
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+}
+
+@media (min-width: 1180px){
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
