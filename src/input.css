@@ -54,6 +54,14 @@ section {
   @apply bg-primary text-gray-950;
 }
 
+/* galeri header start */
+.galeri-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/gambar-2.jpeg");
+  @apply w-full h-64 flex items-center justify-start bg-no-repeat bg-cover;
+}
+/* galeri-header end */
+
 /* kontak header start */
 .kontak-header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
