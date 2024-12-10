@@ -34,8 +34,8 @@ function showPopUpGaleri(event) {
   contentGaleri.id = "content-galeri";
   contentGaleri.innerHTML = `
    <div>
-        <div class='float-right'>
-          <button class='bg-primary text-gray-950' id='popup-close'><i class='fa fa-x'></i></button>
+        <div class='float-right '>
+          <button class='w-7 h-7 xl:w-11 xl:h-11 lg:w-9 lg:h-9 md:w-8 md:h-8 bg-primary hover:opacity-85 text-gray-950 flex justify-center items-center' id='popup-close'><i class='fa fa-x text-sm xl:text-lg lg:text-md'></i></button>
         </div>
         <img src='${galeriImage}' alt='${galeriImage}' />
     </div>`;

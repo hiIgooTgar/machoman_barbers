@@ -93,3 +93,7 @@ footer h4::after {
 #overlay-galeri #content-galeri img {
   @apply w-full h-full object-cover;
 }
+
+#overlay-galeri #popup-close:hover i {
+  @apply duration-300 hover:rotate-180;
+}
