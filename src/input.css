@@ -80,3 +80,16 @@ footer h4::after {
   @apply w-10 h-2 bg-primary absolute right-0 -bottom-1 inline-block;
 }
 /* footer end */
+
+/* pop up galeri */
+#overlay-galeri {
+  @apply w-full h-full fixed left-0 top-0 right-0 bottom-0 backdrop-blur-md bg-[rgba(0,0,0,0.5)] z-[100] flex justify-center items-center;
+}
+
+#overlay-galeri #content-galeri {
+  @apply xl:w-[60%] md:w-[70%] w-[80%] z-10 flex-col-reverse;
+}
+
+#overlay-galeri #content-galeri img {
+  @apply w-full h-full object-cover;
+}
