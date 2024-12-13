@@ -1156,6 +1156,22 @@ section{
 
 /* about-header end */
 
+/* service header start */
+
+.service-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/gambar-4.jpg");
+  display: flex;
+  height: 16rem;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* service-header end */
+
 /* galeri header start */
 
 .galeri-header {
