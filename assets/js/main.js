@@ -47,3 +47,9 @@ function showPopUpGaleri(event) {
     document.body.removeChild(overlayGaleri);
   });
 }
+
+// year copyright
+const year = (document.getElementById("year").innerHTML =
+  new Date().getFullYear());
+
+// looping scroll

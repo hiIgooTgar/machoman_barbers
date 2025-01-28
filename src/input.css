@@ -5,8 +5,25 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-colors: #eab308;
+  --gray-colors: #010d19;
+}
+
 body {
   @apply bg-gray-950 text-white font-Kanit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-colors);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray-colors);
 }
 
 ::selection {
@@ -112,4 +129,50 @@ footer h4::after {
 
 #overlay-galeri #popup-close:hover i {
   @apply duration-300 hover:rotate-180;
+}
+
+/* slider infinity */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  height: var(--height-slider);
+  mask-image: linear-gradient(to right, transparent, #000 10% 70%, transparent);
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width-slider) * var(--quantity-slider));
+  position: relative;
+}
+
+.slider .list .item-box-slider {
+  width: var(--width-slider);
+  height: var(--height-slider);
+  position: absolute;
+  left: 100%;
+  animation: autoSlider 10s linear infinite;
+  animation-delay: calc((10s / var(--quantity-slider)) * (var(--position) - 1));
+}
+
+@keyframes autoSlider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width-slider) * -1);
+  }
+}
+
+.slider .list .item-box-slider img {
+  width: 100%;
+}
+
+.slider:hover .item-box-slider {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider .item-box-slider:hover {
+  filter: grayscale(0);
 }

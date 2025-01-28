@@ -15,7 +15,10 @@
     />
   </head>
   <body>
-    <header id="navbar" class="bg-slate-900/10 fixed w-full left-0 top-0 z-50">
+    <header
+      id="navbar"
+      class="lg:bg-slate-900/10 bg-slate-900/40 fixed w-full left-0 top-0 z-50 lg:backdrop-blur-sm"
+    >
       <nav class="container flex items-center justify-between h-16 sm:h-20">
         <div class="text-xl sm:text-2xl text-bold">
           <span class="text-primary">Machoman</span>Barbers
@@ -61,20 +64,20 @@
                 <span class="text-primary">Gentlemen.</span>
               </h1>
               <p>
-                Machoman Barbers: Tempat pria sejati tampil sempurna. Dengan
-                sentuhan ahli dan gaya modern, kami hadirkan potongan terbaik
-                yang mencerminkan kepribadian macho Anda. Stay sharp, stay
-                confident!
+                <span class="text-primary">Machoman</span>Barbers: Tempat pria
+                sejati tampil sempurna. Dengan sentuhan ahli dan gaya modern,
+                kami hadirkan potongan terbaik yang mencerminkan kepribadian
+                macho Anda. Stay sharp, stay confident!
               </p>
               <div class="flex flex-col gap-3 sm:flex-row md:gap-4 lg:gap-5">
-                <button class="btn">
+                <a href="./src/service.html" class="btn">
                   <span>Hairstyle</span>
                   <i class="fa-solid fa-street-view"></i>
-                </button>
-                <button class="btn btn-outline">
+                </a>
+                <a href="./src/tentang.html" class="btn btn-outline">
                   <span>Know More</span>
                   <i class="fa-solid fa-circle-check"></i>
-                </button>
+                </a>
               </div>
             </div>
             <div
@@ -101,6 +104,169 @@
           </div>
         </div>
       </section>
+      <div class="w-full h-10 lg:h-14 md:h-12 bg-grayColors relative">
+        <div
+          class="w-20 h-full lg:w-28 md:w-24 bg-primary absolute left-0 top-0"
+        ></div>
+      </div>
+      <div class="container py-24">
+        <div
+          class="col-first flex flex-col lg:flex-row items-center gap-12 mb-24"
+        >
+          <div class="left flex-1">
+            <h1 class="text-4xl text-center">
+              Stay sharp, stay confident,
+              <span class="text-primary">Machoman</span>Barbers makes it happen!
+            </h1>
+          </div>
+          <div class="right flex-1">
+            <p class="text-justify">
+              <span class="text-primary">Machoman</span>Barbers berdiri pada
+              tahun 2021 di Purbalingga, lahir dari mimpi Igo Tegar Prambudhy
+              untuk menciptakan barbershop modern dengan sentuhan lokal.
+              Terinspirasi dari kebutuhan pria akan tempat cukur yang lebih dari
+              sekadar praktis, <span class="text-primary">Machoman</span>Barbers
+              menjadi ruang untuk merawat diri dan mengekspresikan identitas
+              melalui gaya rambut. Dengan desain bergaya industrial yang nyaman,
+              layanan meliputi potong rambut, pencukuran jenggot, styling, dan
+              perawatan rambut dilakukan oleh barber profesional. Dikenal karena
+              kualitas, keramahan, dan tarif terjangkau,
+              <span class="text-primary" pan>Machoman</span>Barbers terus
+              berkembang menjadi salah satu barbershop terbaik di Jawa Tengah,
+              menghadirkan pengalaman yang menyenangkan dan penuh percaya diri.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-second">
+          <h1 class="text-3xl font-semibold mb-6 text-center">
+            Our <span class="text-primary"> Services</span>
+          </h1>
+          <div class="row grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div
+              class="box flex justify-center items-center flex-col border border-spacing-2 rounded-sm p-6 cursor-pointer hover:shadow-primary hover:shadow-md border-primary"
+            >
+              <img
+                src="./assets/images/our-1.png"
+                class="filter invert-[50%] saturate-200 sepia w-28"
+                alt="Our Services"
+              />
+              <div class="text">
+                <h4 class="text-lg my-2 text-primary text-center">
+                  Royal & Service
+                </h4>
+                <p>
+                  Paket Istimewa : haircut, hair wash, hair tonic, head massage,
+                  hot towel, dan styling dengan pomade
+                </p>
+              </div>
+            </div>
+            <div
+              class="box flex justify-center items-center flex-col border border-spacing-2 rounded-sm p-6 hover:drop-shadow-sm cursor-pointer hover:shadow-primary hover:shadow-md border-primary"
+            >
+              <img
+                src="./assets/images/our-2.png"
+                class="filter invert-[50%] saturate-200 sepia w-28"
+                alt="Our Services"
+              />
+              <div class="text">
+                <h4 class="text-lg my-2 text-primary text-center">
+                  Premium Service
+                </h4>
+                <p>
+                  Paket Premium : Haircut, hair tonic, head massage, hot towel,
+                  dan styling dengan pomade
+                </p>
+              </div>
+            </div>
+            <div
+              class="box flex justify-center items-center flex-col border border-spacing-2 rounded-sm p-6 hover:drop-shadow-sm cursor-pointer hover:shadow-primary hover:shadow-md border-primary"
+            >
+              <img
+                src="./assets/images/our-3.png"
+                class="filter invert-[50%] saturate-200 sepia w-28"
+                alt="Our Services"
+              />
+              <div class="text">
+                <h4 class="text-lg my-2 text-primary text-center">
+                  Kid Cut Service
+                </h4>
+                <p>
+                  Layanan potong rambut khusus untuk anak-anak di bawah 12
+                  tahun.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-third w-full bg-primary">
+        <div class="container py-8 flex flex-col lg:flex-row gap-10">
+          <div class="box flex justify-center items-center flex-col flex-1">
+            <i class="fa-solid fa-phone text-grayColors text-2xl mb-2"></i>
+            <h4 class="text-grayColors mb-3">Layanan pelanggan</h4>
+            <p class="text-grayColors">+62 8931 7261 1623</p>
+          </div>
+          <div class="box flex justify-center items-center flex-col flex-1">
+            <i
+              class="fa-solid fa-location-dot text-grayColors text-2xl mb-2"
+            ></i>
+            <h4 class="text-grayColors mb-3">Alamat</h4>
+            <p class="text-grayColors">
+              Jl. Jenderal Soedirman No.88, Purbalingga Kidul, Kec. Purbalingga,
+              Kab. Purbalingga, Jawa Tengah 57331
+            </p>
+          </div>
+          <div class="box flex justify-center items-center flex-col flex-1">
+            <i class="fa-solid fa-clock text-grayColors text-2xl mb-2"></i>
+            <h4 class="text-grayColors mb-3">Jam operasional</h4>
+            <p class="text-grayColors">Buka Senin - Sabtu | 11.00 - 20.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="container py-24">
+        <div
+          class="slider"
+          style="
+            --width-slider: 300px;
+            --height-slider: 200px;
+            --quantity-slider: 10;
+          "
+        >
+          <div class="list">
+            <div class="item-box-slider" style="--position: 1">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 2">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 3">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 4">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 5">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 6">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 7">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 8">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 9">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+            <div class="item-box-slider" style="--position: 10">
+              <img src="./assets/images/gambar-1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="bg-grayColors py-10">
@@ -110,10 +276,10 @@
         >
           <div>
             <h1 class="text-lg xl:text-2xl md:text-xl font-bold">
-              <span class="text-primary">Machoman</span> Barbers
+              <span class="text-primary">Machoman</span>Barbers
             </h1>
             <p class="font-light mt-2">
-              Machoman Barbers: Potongan presisi, gaya maskulin, pelayanan
+              MachomanBarbers: Potongan presisi, gaya maskulin, pelayanan
               premium. Jadilah versi terbaik dirimu, selalu macho!
             </p>
           </div>
@@ -187,8 +353,8 @@
       </div>
       <div class="text-center pt-8 bg-grayColors">
         <p class="sm:text-sm">
-          &copy; 2024 <span class="text-primary">Machoman</span> Barbers. All
-          Rights Reserved
+          &copy; <span id="year"></span>
+          <span class="text-primary">Machoman</span>Barbers. All Rights Reserved
         </p>
       </div>
     </footer>
