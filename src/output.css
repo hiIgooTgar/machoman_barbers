@@ -1430,51 +1430,67 @@ footer h4::after {
 
 /* slider infinity */
 
-.slider {
-  width: 100%;
-  overflow: hidden;
-  height: var(--height-slider);
-  -webkit-mask-image: linear-gradient(to right, transparent, #000 10% 70%, transparent);
-          mask-image: linear-gradient(to right, transparent, #000 10% 70%, transparent);
-}
-
-.slider .list {
-  display: flex;
-  width: 100%;
-  min-width: calc(var(--width-slider) * var(--quantity-slider));
+.wrapper-scroll {
+  border: 1px solid #fff;
   position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10% 65%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 10% 65%, transparent);
 }
 
-.slider .list .item-box-slider {
-  width: var(--width-slider);
-  height: var(--height-slider);
-  position: absolute;
-  left: 100%;
-  animation: autoSlider 10s linear infinite;
-  animation-delay: calc((10s / var(--quantity-slider)) * (var(--position) - 1));
-}
-
-@keyframes autoSlider {
-  from {
-    left: 100%;
-  }
-
+@keyframes scrollRun {
   to {
-    left: calc(var(--width-slider) * -1);
+    left: -200px;
   }
 }
 
-.slider .list .item-box-slider img {
-  width: 100%;
+.wrapper-scroll .item-scroll {
+  width: 200px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  left: calc(200px * 8);
+  animation-name: scrollRun;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: -10s;
 }
 
-.slider:hover .item-box-slider {
-  animation-play-state: paused !important;
-  filter: grayscale(1);
+#item-1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  background: yellow;
 }
 
-.slider .item-box-slider:hover {
-  filter: grayscale(0);
+#item-2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  background: blue;
+}
+
+#item-3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+#item-4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+#item-5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+#item-6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+#item-7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+#item-8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
 .hover\:-translate-y-7:hover{
